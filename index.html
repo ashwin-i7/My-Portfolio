@@ -4,77 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwini Namdeo</title>
+    <link rel="shortcut icon" href="image/logo favcon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
 </head>
 <body>
     <!-- header starts -->
     <header>
-        <div class="head">
+        <nav>
+            <div class="left">
+                <div class="logo">
+                    <img src="image/logo.png" alt="">
+               </div>
+            </div>
+        <div class="right">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact</a>      
         </div>
+        </nav>
     </header>
 
     <!-- main containt -->
      
-    <div class="contant-box">
-        <div class="name-box">
-           <div>
-            <p>Hello, my name is</p>
-            <h1>Ashwini Namdeo</h1>
-            <h2>"Aspiring Software Developer"</h2>
-           <p id="about-me">
-            I have recently completed B-Tech in Electrical and Electronics Engineering
-            <br>from University Institute of Technology RGPV Bhopal.
-            <br>
-            Primarily interested in Web Development.
-            <br>
-            <br>
-            I enjoy learning new skills and implementing them in real life!
-           </p>
-           </div>
+    <section class="firstSection">
+        <div class="left-fs">
+            <div>Hi, My name is <span class="color">Ashwini</span></div>
+            <div>and I am a Aspiring</div>
+            <div> <span id="element"></span></div>
+            <div class="button">
+                <button class="btn">Download Resume</button>
+                 <button class="btn">Github</button>
+                  <button class="btn">Linkdin</button>
             </div>
-
-            <div id="image">
-                <div class="box-contant">
-                <div class="box-image" style=" background-image: url('image/ashwinimg.jpg');"></div>
-            </div>
-           </div>
         </div>
 
-        <div class="skills">
-            <div class="skills-box">
+        <div class="right-fs">
+                <div id="image">
+                    <img src="image/ashwinimg.jpg" alt="">
+                </div>
+                <div>
+                
+                </div>
+        </div>
+    </section>
+    <section class="secondSection">
+        <div class="skillsSection">
+            <!-- <div class="skills-line">
+                Skills
+            </div> -->
+            <div class="skills">
                 <a href="#">Java</a>
-                <a href="#">HTML & CSS</a>
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
                 <a href="#">Javascript</a>
+                <a href="#">React</a>
+                <a href="#">Spring Boot</a>
+                <a href="#">RESTful APIs</a>
+                <a href="#">SQL</a>
+                <a href="#">MongoDB</a>
             </div>
         </div>
+        </section>
 
-    <div class="project-section">
-        <div class="box1 box">
-            <div class="box-cont">
-                <h2>Stone Paper Scissors</h2>
-                <div class="box-img" style=" background-image: url('image/rock\ paper.png');"></div>
-                 
-            </div>
-        </div>
-        <div class="box2 box">
-            <div class="box-cont">
-                <h2>Currency Converter</h2>
-                <div class="box-img" style=" background-image: url('image/currencyConverter.png');"></div>
-                
-            </div>
-        </div>
-        <div class="box3 box">
-            <div class="box-cont">
-                <h2>Amazon Clone</h2>
-                <div class="box-img" style=" background-image: url('image/Amazon\ Clone.jpg');"></div>
-                
-            </div>
-        </div>
-        </div>
+   
         
         
 
@@ -85,11 +83,19 @@
      <!-- footer starts -->
       <footer>
        <div class="copyright">
-    ©2025, ashwini
-    <br>
     ashwin-platform.netlify.app
+    <br>
+    © 2025 | All rights reserved
        </div>
       </footer>
  
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', 'Java Programmer.', 'Video Editor.', 'Java Full Stack Developer.'],
+      typeSpeed: 60,
+    });
+  </script>
 </body>
 </html>
